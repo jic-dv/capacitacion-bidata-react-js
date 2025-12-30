@@ -1,0 +1,140 @@
+/* ===============================
+   Reset básico y normalización
+   =============================== */
+
+/* Elimina márgenes y paddings por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+/* ===============================
+   Body y tipografía base
+   =============================== */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+
+  font-size: 16px; /* Tamaño base */
+  line-height: 1.6; /* Altura de línea legible */
+
+  color: #111827; /* Gris oscuro (mejor que negro puro) */
+  background-color: #ffffff;
+
+  -webkit-font-smoothing: antialiased; /* Mejora renderizado */
+}
+
+/* ===============================
+   Títulos
+   =============================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  color: #020617;
+}
+
+/* Tamaños orientativos */
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+
+/* ===============================
+   Textos y párrafos
+   =============================== */
+
+p {
+  margin-bottom: 1rem; /* Separación natural */
+  color: #374151;
+}
+
+/* ===============================
+   Enlaces
+   =============================== */
+
+a {
+  color: #2563eb; /* Azul accesible */
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   Listas
+   =============================== */
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===============================
+   Imágenes
+   =============================== */
+
+img {
+  max-width: 100%; /* Responsive */
+  display: block; /* Evita espacios fantasma */
+}
+
+/* ===============================
+   Botones (base)
+   =============================== */
+
+button {
+  font-family: inherit; /* Usa la fuente del body */
+  font-size: 14px;
+
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ===============================
+   Container global
+   =============================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 0 1rem; /* Espacio lateral */
+}
+
+/* ===============================
+   Utilidades simples
+   =============================== */
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.mt-3 {
+  margin-top: 1.5rem;
+}

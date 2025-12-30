@@ -1,0 +1,115 @@
+/* Sección propiedades */
+.properties-section {
+  margin-top: 28px;
+}
+
+.properties-section__title {
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 860px) {
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Property Card */
+.property-card {
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+}
+
+.property-card__media {
+  position: relative;
+  height: 220px;
+  background: #f3f4f6;
+}
+
+.property-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.property-card__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #111827;
+  color: #ffffff;
+}
+
+.property-card__content {
+  padding: 14px;
+}
+
+.property-card__meta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.property-card__tag {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.property-card__title {
+  font-size: 16px;
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+
+.property-card__desc {
+  margin: 0 0 12px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.property-card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #111827;
+  font-size: 13px;
+}
+
+.property-card__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+.property-card__location {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.property-card__price {
+  font-weight: 700;
+  color: #111827;
+}

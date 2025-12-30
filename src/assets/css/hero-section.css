@@ -1,0 +1,189 @@
+/* hero-section.css */
+
+/* Sección principal del Hero */
+.hero {
+  background: #454545ff; /* Fondo oscuro moderno */
+  color: #ffffff;
+  padding: 64px 0; /* Espaciado vertical */
+}
+
+/* Contenedor centrado y con ancho máximo */
+.hero__container {
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 0 16px; /* Aire lateral en móvil */
+}
+
+/* Layout del Hero: texto a la izquierda, imagen a la derecha */
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr; /* Proporción texto/imagen */
+  gap: 32px; /* Separación entre columnas */
+  align-items: center;
+}
+
+/* Bloque de contenido */
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* Espaciado vertical entre elementos */
+}
+
+/* “Etiqueta” superior (microcopy) */
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+
+  padding: 8px 12px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Punto decorativo de la etiqueta */
+.hero__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #22c55e; /* Verde “éxito / crecimiento” */
+}
+
+/* Título principal (H1) */
+.hero__title {
+  font-size: clamp(32px, 4vw, 54px); /* Responsive sin media queries */
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0;
+  color: white;
+}
+
+/* Frase destacada dentro del título */
+.hero__title strong {
+  color: #22c55e;
+}
+
+/* Texto descriptivo */
+.hero__subtitle {
+  margin: 0;
+  max-width: 60ch; /* Evita líneas demasiado largas */
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.6;
+}
+
+/* Contenedor de botones */
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+/* Botón base */
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px 16px;
+  border-radius: 10px;
+
+  font-weight: 650;
+  font-size: 14px;
+
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: transform 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.hero__btn:active {
+  transform: translateY(1px);
+}
+
+/* Botón principal */
+.hero__btn--primary {
+  background: #22c55e;
+  color: #07110b;
+}
+
+.hero__btn--primary:hover {
+  transform: translateY(-1px);
+  background: #1fb455;
+}
+
+/* Botón secundario */
+.hero__btn--secondary {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.hero__btn--secondary:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* Redes sociales */
+.hero__social {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.hero__social a {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.15s ease;
+}
+
+.hero__social a:hover {
+  color: #ffffff;
+}
+
+/* Tarjeta de imagen */
+.hero__media {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Imagen responsive */
+.hero__image {
+  width: 100%;
+  height: 420px; /* Alto controlado */
+  object-fit: cover; /* Recorta sin deformar */
+  display: block;
+}
+
+/* Responsive: apila el contenido */
+@media (max-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__image {
+    height: 320px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding: 48px 0;
+  }
+
+  .hero__btn {
+    width: 100%;
+  }
+}

@@ -14,6 +14,7 @@ import "./assets/css/services-section.css";
 // Nuevos imports
 import "./assets/css/cart.css";
 import "./assets/css/navigation.css";
+import "./assets/css/properties-section.css";
 import "./assets/css/property-card.css";
 
 createRoot(document.getElementById("root")).render(

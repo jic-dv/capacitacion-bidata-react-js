@@ -3,9 +3,10 @@
 // import Navigation from "./components/Navigation";
 // import AboutSection from "./components/sections/AboutSection";
 // import ContactSection from "./components/sections/ContactSection";
-import FundamentalsSection from "./components/sections/FundamentalsSection";
+// import FundamentalsSection from "./components/sections/FundamentalsSection";
 // import HeroSection from "./components/sections/HeroSection";
 // import ServicesSection from "./components/sections/ServicesSection";
+import PropertiesSection from "./components/sections/PropertiesSection";
 
 const App = () => {
   return (
@@ -17,8 +18,13 @@ const App = () => {
       {/* SECCIONES */}
       {/* COMPONENTE HERO */}
       <main>
+        {/* Hook useState */}
+
+        {/* PROPERTIES SECTION */}
+        <PropertiesSection />
+
         {/* COMPONENTE FUNDAMENTOS JavaScript y React.js */}
-        <FundamentalsSection />
+        {/* <FundamentalsSection /> */}
 
         {/* <HeroSection /> */}
 
